@@ -1,5 +1,6 @@
 import React from "react";
 import travel from "../assets/travel.svg";
+import { Link } from "react-router-dom";
 const LandingPage = () => {
   //ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
   //"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
@@ -13,11 +14,12 @@ const LandingPage = () => {
         </h1>
         <p>
           Looking for the beast deals on hotels around the globe?Look no further
-          than our hotel booking website.With our extensive network of hotels,
-          you can find unbeatable prices on accomodations in popular
-          destionations
+          than our hotel booking website. you can find unbeatable prices on
+          accomodations in popular destionations
         </p>
-        <button className="start_btn">Let's Get Started</button>
+        <Link className="start_btn" to="/forms">
+          Let's Get Started
+        </Link>
       </div>
       <img src={travel} className="travel_img" />
     </div>
