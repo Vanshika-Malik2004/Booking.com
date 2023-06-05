@@ -188,7 +188,7 @@ const Forms = () => {
                   <Link
                     className="book_btn"
                     key={i}
-                    to={`/Details?id=${arr[i].hotelId}&checkin=${checkin}&checkout=${checkout}`}
+                    to={`/Details?id=${arr[i].hotelId}&checkin=${checkin}&checkout=${checkout}&price=${h.ratesSummary.minPrice}&lat=${h.location.latitude}&lon=${h.location.longitude}`}
                   >
                     book now
                   </Link>
